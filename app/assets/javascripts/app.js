@@ -9,9 +9,9 @@
 
   function listen() {
     //Listeners here
-
     $('#body')
-      .on('click', '#x-btn-submit', getPlaces);
+      .on('click', '#x-btn-submit', 
+        getPlaces);
   }
 
   function getPlaces(e){
@@ -35,6 +35,11 @@
       //append the headers Name, Category, Cross Streets and Url
       //loop through the results and output them in the table
       //use jQuery or vanilla JS
+      $("#results").empty();
+      $("#results").append("<tr><th>Name</th><th>Category</th><th>Cross Streets</th><th>Url</th></tr>");
+        for (var i = 0; i < result.length; i++){
+        $("#results").append("<tr><th>" + result[i].name + "</th>" + "<th>" + result[i].category + "</th>" + "<th>" + result[i].cross_streets + "</th>" + "<th>" + result[i].url + "</th></tr>" );
+      }
     });
 
   }
