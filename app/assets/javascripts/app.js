@@ -46,7 +46,7 @@
         // for (var i = 0; i < result.length; i++){
         // This loop could be uncommented and the all instances of "randomIndexNumber" could be changed back to "i" to go back to displaying 25 results.
 
-      $("#results").append("<tr><th>" + result[randomIndexNumber].name + "</th>" + "<th>" + result[randomIndexNumber].category + "</th>" + "<th>" + result[randomIndexNumber].cross_streets + "</th>" + "<th>" + result[randomIndexNumber].url + "</th>" + "<th>" + result[randomIndexNumber].phone + "</th></tr>" );
+      $("#results").append("<tr><td>" + result[randomIndexNumber].name + "</td>" + "<td>" + result[randomIndexNumber].category + "</td>" + "<td>" + result[randomIndexNumber].cross_streets + "</td>" + "<td>" + result[randomIndexNumber].url + "</td>" + "<td>" + result[randomIndexNumber].phone + "</td></tr>" );
 
       // }
     });

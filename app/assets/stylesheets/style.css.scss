@@ -9,8 +9,12 @@
   box-shadow: $vars;
 }
 
-@mixin border-radius($vars){
-  
+@mixin border-radius($pixels){
+  -moz-border-radius: $pixels; 
+  -webkit-border-radius: $pixels; 
+  -o-border-radius: $pixels; 
+  -ms-border-radius: $pixels;
+  border-radius: $pixels; 
 }
 
 body {
@@ -60,4 +64,67 @@ button {
   td {
     text-align: left;
   }
+}
+
+@media only screen and (max-width : 320px) {
+
+  input {
+    width: 100%;
+  }
+
+  #x-btn-submit{
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #results {
+  display: block; 
+  width: 100%;
+  margin: auto;
+
+  th {
+    font-size: 1em;
+    text-align: left;
+    }
+  td {
+    text-align: left;
+    font-size: 9px;
+    }
+  }
+
+}
+
+@media only screen and (max-width : 425px) {
+  #results {
+    width: 100%;
+  }
+
+  #location {
+    width: 100%;
+  }
+
+  #x-btn-submit{
+    width: 100%;
+  }
+
+   h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  #results {
+    width: 80%;
+  }
+   h1 {
+    font-size: 2em;
+  }
+
+}
+
+@media  only screen and (max-width : 1024px) {
+
 }
