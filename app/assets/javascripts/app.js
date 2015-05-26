@@ -11,7 +11,7 @@
     //Listeners here
 
     $('#body')
-      .on('click', 'x-btn-submit', getPlaces);
+      .on('click', '#x-btn-submit', getPlaces);
   }
 
   function getPlaces(e){
