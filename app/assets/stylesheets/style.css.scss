@@ -9,6 +9,10 @@
   box-shadow: $vars;
 }
 
+@mixin border-radius($vars){
+  
+}
+
 body {
   margin: 0;
   font-family: Verdana, sans-serif;

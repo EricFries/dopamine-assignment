@@ -20,7 +20,7 @@
 
     var $btn = $(this),
         location = $('#location').val(),
-        limit = "8";
+        limit = "25";
 
     location = location.replace(" ","");
 
@@ -36,9 +36,11 @@
       //loop through the results and output them in the table
       //use jQuery or vanilla JS
       $("#results").empty();
-      $("#results").append("<tr><th>Name</th><th>Category</th><th>Cross Streets</th><th>Url</th></tr>");
+      debugger
+      $("#x-btn-submit").html("Roll Again!");
+      $("#results").append("<tr><th>Name</th><th>Category</th><th>Cross Streets</th><th>Url</th><th>Phone</th></tr>");
         for (var i = 0; i < result.length; i++){
-        $("#results").append("<tr><th>" + result[i].name + "</th>" + "<th>" + result[i].category + "</th>" + "<th>" + result[i].cross_streets + "</th>" + "<th>" + result[i].url + "</th></tr>" );
+        $("#results").append("<tr><th>" + result[i].name + "</th>" + "<th>" + result[i].category + "</th>" + "<th>" + result[i].cross_streets + "</th>" + "<th>" + result[i].url + "</th>" + "<th>" + result[i].phone + "</th></tr>" );
       }
     });
 
