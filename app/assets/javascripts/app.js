@@ -24,10 +24,10 @@
 
     location = location.replace(" ","");
 
-    var url = "/places?postal_code="+location;
+    var url = "/places/"+location;
 
     if (limit.length) {
-      url += "&limit="+limit;
+      url += "/" + limit;
     }
 
     $.get(url, function(result){
