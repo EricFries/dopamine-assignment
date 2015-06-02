@@ -25,6 +25,10 @@ body {
   color: #dedede;
 }
 
+a {
+  color: #dedede;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -81,7 +85,7 @@ button {
   }
 
   #results {
-  width: 80%;
+  width: 100%;
   margin: auto;
   th {
     font-size: .8em;
@@ -97,7 +101,16 @@ button {
 
 @media only screen and (max-width : 425px) {
   #results {
-    width: 100%;
+  width: 80%;
+  margin: auto;
+  th {
+    font-size: .8em;
+    text-align: left;
+    }
+  td {
+    text-align: left;
+    font-size: 10px;
+    }
   }
 
   #location {
@@ -111,6 +124,7 @@ button {
    h1 {
     font-size: 1.5em;
   }
+
 }
 
 @media only screen and (max-width : 768px) {
