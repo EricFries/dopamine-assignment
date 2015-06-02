@@ -41,12 +41,12 @@
       var randomIndexNumber=Math.floor(Math.random() * result.length);
 
 
-      $("#results").append("<tr><th>Name</th><th>Category</th><th>Cross Streets</th><th>Url</th><th>Phone</th></tr>");
+      $("#results").append("<tr><th>Name</th><th>Category</th><th>Cross Streets</th><th>Phone</th></tr>");
 
         // for (var i = 0; i < result.length; i++){
         // This loop could be uncommented and the all instances of "randomIndexNumber" could be changed back to "i" to go back to displaying 25 results.
 
-      $("#results").append("<tr><td>" + result[randomIndexNumber].name + "</td>" + "<td>" + result[randomIndexNumber].category + "</td>" + "<td>" + result[randomIndexNumber].cross_streets + "</td>" + "<td>" + result[randomIndexNumber].url + "</td>" + "<td>" + result[randomIndexNumber].phone + "</td></tr>" );
+      $("#results").append("<tr><td><a href=" + result[randomIndexNumber].url +">" + result[randomIndexNumber].name + "</a></td><td>" + result[randomIndexNumber].category + "</td><td>" + result[randomIndexNumber].cross_streets + "</td><td>" + result[randomIndexNumber].phone + "</td></tr>" );
 
       // }
     });
